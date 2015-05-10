@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'entypo';
+	src: url('entypo-social.eot');
+	src: url('entypo-social.eot?#iefix') format('embedded-opentype'),
+url('entypo-social.woff') format('woff'),
+url('entypo-social.ttf') format('truetype'),
+url('entypo-social.svg') format('svg');
+}

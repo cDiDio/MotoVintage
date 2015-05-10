@@ -1,0 +1,307 @@
+/* CSS Document */
+@import url("EntypoSocial/stylesheet.css");
+#slider-back{
+	width:100%;
+	height:600px;
+	}
+.clear-float{
+	height:0px;
+	line-height:0px;
+	font-size: 0px;
+	clear:both;
+}
+#chisiamo{
+	width: 100%;
+	height: 590px;
+	background-repeat: no-repeat;
+	background-image: url(../images/moto_chisiamo.jpg);
+	background-position: 43% 10%;
+	}
+#puntovendita{
+	width: 100%;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-image: url(../images/moto-puntovendita.jpg);
+	background-position: 50% 0%;
+	}
+#sect-puntovendita{
+	width:100%;
+	background: #f8eee7;
+	}
+#slider, #slider_chisiamo, #container-vendita, .shop,#container-footer{
+	width: 1020px;
+	margin:0 auto
+	}
+#site{
+	width:100%;
+	background-color:white	;
+}
+#site figure{
+	margin: 0px;
+	padding-top:20px;
+	float: left;
+	}
+footer{
+	height:110px;
+	width:100%;
+	background:rgba(0,0,0,1.00)}
+/*---MENU NAV CON ANIMAZIONE SU BORDER A IN HOVER---*/
+nav{
+    text-align: center;
+	padding:30px 0;
+    }
+nav ul {
+    display: inline-block;
+    margin: 0;
+	list-style-type: none;
+	padding-left: 0px
+    }
+nav li {
+	font-family:Track;
+	font-size:12px;
+    float: left;
+    padding: 2px 60px;
+    }
+nav ul li a{
+	text-decoration:none;
+	position: relative;
+	text-transform:uppercase;
+	color: rgba(46,46,46,1.00);
+	transition: .5s	
+	}
+/*-- L'after crea il bordo in basso --*/	
+nav ul li a:after {
+  display: block;
+  position: absolute;
+  left:0;
+  width: 0;
+  bottom:-5px;
+  height: 1px;
+  background-color: rgb(255, 186, 96);
+  content: "";
+  transition: 0.2s ease-out;
+}
+nav li a:hover{
+	color: rgb(255, 186, 96);
+	}
+/*-- L'hover di after al 100% crea l'animazione --*/	
+nav li a:hover:after {
+  width: 100%;
+}
+nav ul li a.active{
+	color: rgb(255, 186, 96);
+	}
+/*--- SLIDER CENTRALE ---*/
+#slider{
+	position: relative;
+	background:url(../images/moto-background.png) top 40px left 50% no-repeat;
+	height: 510px;
+	}
+#slider_chisiamo{
+	position: relative;
+	height: 510px;
+	}
+#slider_puntovendita{
+	position: relative;
+	height: 510px;
+	}
+#slider h1{
+	position:absolute;
+	color:rgba(0,0,0,1.00);
+	font-family:Track;
+	padding-top:150px;
+	font-size: 40px;
+	line-height:50px;
+	text-align:center
+	}
+#slider_chisiamo h1{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  	color: rgb(255, 186, 96);
+	font-family:Track;
+	padding-top:150px;
+	font-size: 40px;
+	line-height:50px;
+	text-align:center;
+	}
+#slider_puntovendita h1{
+position: absolute;
+  top: 50%;
+  left: 70%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  	color: rgb(255, 186, 96);
+	font-family:Track;
+	padding-top:150px;
+	font-size: 40px;
+	line-height:50px;
+	text-align:center;
+	}
+
+#slider .button{
+	position:absolute;
+	text-align:center;
+	font-family:Track;
+	font-size:13px;
+	text-transform:uppercase;
+	}
+.button a{
+	display:inline-block;
+	padding:20px;
+	border: 1px solid rgba(255,255,255,1.00);
+	color: rgba(255,255,255,1.00);
+	text-decoration:none;
+	transition: .8s
+}
+.button a:hover{
+	color: #A45618;	
+	background-color: white
+}
+
+/*---SEZIONE BOX: 3 flexible box---*/
+#box, #art-chisiamo{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  }
+.box-h{
+	height:490px
+	}
+.box{
+	padding: 60px 60px;
+	flex: 3 0px;
+	}
+#box1 {
+background: #f8eee7; 
+}
+#box2 {
+background: #f4e7d8;
+}
+#box3 {
+background: #f4decb; 
+}
+.box_chisiamo{
+	padding: 60px 60px 50px 60px;
+	flex: 3 0px;
+	}
+#box4 {
+background: #f8eee7;
+flex: 0 0px;
+}
+#box5 {
+flex: 2 0px;
+padding: 60px 60px 50px 60px;
+}
+#box5 .underline{
+	background:url(../images/subtitle_line_black.png) no-repeat center;
+	height:3px;
+	width:100%;
+	}
+#box6{
+	padding:0}
+#box5:hover, #box6:hover, #box7:hover, #box8:hover{
+	cursor:auto}
+.box .title{
+	font-family:Track;
+	font-size:18px;
+	text-align:center;
+	display:inline-block
+	}
+.box .title a{
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)
+	}
+.box .didascalia{
+	padding-top:30px;
+	font-family:Cambria;
+	font-size:12px;
+	}
+.underline{
+	background:url(../images/subtitle_line_black.png) no-repeat center;
+	height:3px;
+	width:0;
+	transition: 0.5s ease-out;
+	}
+.box:hover{
+	cursor:pointer;
+	}
+/*--- Animazione sul sottolineato dei box ---*/
+.box:hover .underline{
+  width: 100%;
+  transition: 0.5s ease-out;
+}
+/*---shop--*/
+.shop{
+	width:100%;
+	height:645px;
+	background-color:white
+	}
+.address{
+	width:460px;
+	float:right;
+	padding-left:50px;
+}
+.foto_shop{
+	width:510px;
+	float:left;
+}
+.map{
+	width:1020px;
+	height:auto
+	}
+.address h1{
+	font-family:Track;
+	padding-top:55px}
+.address p{line-height:200%}
+/*---footer --*/
+#container-footer{
+	    text-align: center;
+}
+#container-footer ul{
+	display: inline-block;
+	list-style-type: none;
+	text-align:center;
+	padding-top:30px
+	}
+#container-footer ul li{
+	font-family:Track;
+	font-size:8px;
+	line-height:50px;
+    float: left;
+    padding: 2px 30px 0px 0px;
+	color:rgba(255,255,255,1.00)
+	}
+#container-footer ul li:after{
+	content:'';
+	border-right: 1px solid rgba(255, 186, 96,1.00);
+	padding-right: 30px
+}
+
+.social_icon{
+	display:inline;
+		font-family: 'entypo';
+		font-size:45px;
+		line-height:45px;
+		color: rgba(255,255,255,1.00);
+		float:left;
+		padding-right:20px;
+		text-align:center;
+}
+.social_icon a{
+	text-decoration:none;
+	color: rgba(255,255,255,1.00);
+}
+.social_icon a:hover{
+	color: rgba(255, 186, 96,1.00);
+}
+
+.clear-float{
+	clear: both;
+	display: block;
+	}
